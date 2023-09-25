@@ -1,11 +1,19 @@
+using System;
+
+namespace MySpace
 {
-    for(int i = 12; i<= 0; i++)
+    class Program
     {
-        for (int j = i; j <= 0; j++)
+        static void Main(string[] args)
         {
-            Console.Write(j = " ");
+            for(int i = 12; i >= 0; i--)
+            {
+                for (int k = i; k>= 0; k--)
+                {
+                    Console.Write(k + " ");
+                }
+                Console.WriteLine();
+            }
         }
     }
-    Console.WriteLine();
 }
-
