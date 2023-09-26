@@ -1,4 +1,10 @@
+namespace lol 
 {
+    class program
+    {
+        static void Main(string[] args)
+        {
+            {
     Random random = new Random;
     bool startAgain = true;
     int min = 1;
@@ -53,3 +59,7 @@
     Console.ReadKey();
     }
 
+
+        }
+    }
+}
