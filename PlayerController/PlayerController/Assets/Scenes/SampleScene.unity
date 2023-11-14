@@ -322,6 +322,8 @@ GameObject:
   - component: {fileID: 1627602411}
   - component: {fileID: 1627602410}
   - component: {fileID: 1627602414}
+  - component: {fileID: 1627602415}
+  - component: {fileID: 1627602416}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -444,6 +446,54 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1627602415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627602408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034c2cea20cce4ea0e0d5c245386bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
+  horizontalInput: 0
+  forwardInput: 0
+  PlayerHeight: {fileID: 1627602416}
+  playerCol: {fileID: 1627602410}
+  normalHeight: 0
+  crouchHeight: 0.4
+  player: {fileID: 0}
+  offset: {x: 0, y: 0, z: 0}
+--- !u!143 &1627602416
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627602408}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1855871537
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +691,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962220054}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9724933a93e17504881b00a5fa45f948, type: 3}
   m_Name: 
